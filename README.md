@@ -1,155 +1,201 @@
-# I Ching Divination 易經占卜
+# 易經占卜 I Ching Divination
 
-> A rule-based I Ching (易經) divination web application. **No AI APIs** — all interpretations come from traditional texts and deterministic algorithms.
-
----
-
-## Project Intent
-
-Create an interactive web application that allows users to perform traditional I Ching divination (易經占卜) using the classic coin toss method. The app will generate hexagrams and provide interpretations based on the ancient text, entirely through rule-based logic.
-
-### Why I Ching?
-
-The I Ching (Book of Changes) is one of the oldest Chinese classical texts. It's a perfect candidate for a non-AI divination system because:
-
-1. **Fully rule-based**: 64 hexagrams with defined meanings, no ambiguity
-2. **Algorithmic generation**: Coin toss / yarrow stick methods are mathematically precise
-3. **Rich interpretation data**: Thousands of years of documented interpretations
-4. **Educational value**: Users learn about Chinese philosophy and symbolism
+> 基於規則的易經占卜網頁應用程式。**不使用任何 AI API** — 所有解讀皆來自傳統經典文本與確定性演算法。
 
 ---
 
-## Constraints
+## 專案目的
 
-### ❌ No AI APIs
+建立一個互動式網頁應用，讓使用者透過傳統擲幣法進行易經占卜。系統會生成卦象並根據古代經典文本提供解讀，完全採用規則式邏輯，不涉及任何 AI 技術。
 
-This project explicitly forbids:
-- OpenAI, Anthropic, or any LLM API calls
-- Machine learning models for interpretation
-- "Smart" or "personalized" readings based on user data
+### 為什麼選擇易經？
 
-### ✅ What IS Allowed
+易經（周易）是中國最古老的經典之一，非常適合作為非 AI 占卜系統：
 
-- Static rule tables and lookup dictionaries
-- Pseudo-random number generation for coin tosses
-- Mathematical calculations for hexagram construction
-- Pre-written interpretations from classical texts
-- User input for question framing (optional)
+1. **完全基於規則** — 64 卦各有明確定義，無歧義
+2. **演算法生成** — 擲幣法與蓍草法皆為精確的數學方法
+3. **豐富的解讀資料** — 數千年的經典文獻與註釋
+4. **教育價值** — 使用者可學習中國哲學與易學象徵
 
 ---
 
-## In Scope
+## 本地端運行教學
 
-| Feature | Description |
-|---------|-------------|
-| Hexagram generation | Simulate 3-coin toss × 6 lines |
-| Primary hexagram display | Show the resulting hexagram with name (Chinese + English) |
-| Changing lines | Identify and highlight changing lines (老陰/老陽) |
-| Relating hexagram | Calculate and display the transformed hexagram |
-| Interpretations | Display judgments, images, and line texts from classical sources |
-| Mobile-responsive UI | Works on phone and desktop |
-| Bilingual support | Chinese and English text |
+### 前置需求
 
-## Out of Scope (for v1)
+- 任何現代瀏覽器（Chrome、Firefox、Safari、Edge）
+- 不需要安裝 Node.js 或其他套件
 
-| Feature | Reason |
-|---------|--------|
-| User accounts | Simplicity |
-| Reading history | No backend persistence |
-| Social sharing | Focus on core functionality |
-| Yarrow stalk method | More complex, can add later |
-| Public deployment | Per project constraints |
+### 方法一：直接開啟
 
----
+```bash
+# 進入專案目錄
+cd iching-divination
 
-## Technical Stack (Planned)
+# 直接用瀏覽器開啟
+open index.html          # macOS
+xdg-open index.html      # Linux
+start index.html         # Windows
+```
 
-- **Frontend**: HTML/CSS/JavaScript (vanilla or lightweight framework)
-- **Data**: JSON files containing hexagram definitions
-- **Hosting**: Local development only (no public deployment)
-- **Build**: None required, or minimal (e.g., Vite for dev server)
+### 方法二：本地伺服器（推薦）
 
----
+使用本地伺服器可避免部分瀏覽器的 CORS 限制：
 
-## Hexagram Data Structure
+```bash
+# 使用 Python 內建伺服器
+cd iching-divination
+python3 -m http.server 8080
 
-Each hexagram will be represented as:
+# 然後在瀏覽器開啟
+# http://localhost:8080
+```
 
-```json
-{
-  "number": 1,
-  "name": {
-    "chinese": "乾",
-    "pinyin": "qián",
-    "english": "The Creative"
-  },
-  "trigrams": {
-    "upper": "☰",
-    "lower": "☰"
-  },
-  "judgment": "...",
-  "image": "...",
-  "lines": [
-    { "position": 1, "text": "..." },
-    ...
-  ]
-}
+或者使用 Node.js：
+
+```bash
+# 安裝 serve（僅需一次）
+npm install -g serve
+
+# 啟動伺服器
+cd iching-divination
+serve .
+
+# 預設會在 http://localhost:3000
 ```
 
 ---
 
-## Divination Algorithm
+## 功能範圍
 
-### Coin Toss Method (三錢法)
+### ✅ 已實作
 
-For each of 6 lines (bottom to top):
-1. Toss 3 coins
-2. Heads = 3, Tails = 2
-3. Sum determines line type:
-   - 6 (2+2+2) = Old Yin ⚋ (changing)
-   - 7 (2+2+3) = Young Yang ⚊
-   - 8 (2+3+3) = Young Yin ⚋
-   - 9 (3+3+3) = Old Yang ⚊ (changing)
+| 功能 | 說明 |
+|------|------|
+| 卦象生成 | 模擬三枚銅幣 × 6 爻的擲幣過程 |
+| 本卦顯示 | 顯示卦名（中英文）、卦象圖形 |
+| 變爻識別 | 標註老陰（太陰）/ 老陽（太陽）變化爻 |
+| 之卦計算 | 顯示變化後的卦象 |
+| 卦辭解讀 | 判辭、象辭、爻辭文字顯示 |
+| 行動裝置適配 | 手機與電腦皆可使用 |
+| 中英雙語 | 同時顯示中文原文與英文翻譯 |
+| 完整 64 卦資料 | 文王序全部 64 卦含判辭、象辭、六爻爻辭 |
 
-### Line Building
+### ❌ 不在範圍內（v1）
+
+| 功能 | 原因 |
+|------|------|
+| 使用者帳號 | 保持簡潔 |
+| 占卜歷史記錄 | 無後端資料庫 |
+| 社群分享 | 專注核心功能 |
+| 蓍草法 | 較複雜，未來可擴充 |
+| 公開部署 | 僅本地開發 |
+
+---
+
+## 核心約束
+
+### ❌ 禁止使用 AI API
+
+本專案明確禁止：
+- OpenAI、Anthropic 或任何 LLM API 呼叫
+- 機器學習模型進行解讀
+- 基於使用者數據的「智能」或「個人化」占卜
+
+### ✅ 允許使用
+
+- 靜態規則表與查找字典
+- 偽隨機數生成器模擬擲幣
+- 卦象建構的數學計算
+- 來自經典文本的預設解讀
+- 使用者輸入問題（可選）
+
+---
+
+## 技術棧
+
+| 項目 | 技術 |
+|------|------|
+| 前端 | HTML / CSS / JavaScript（原生，無框架） |
+| 資料 | JSON 靜態檔案（hexagrams.json、trigrams.json） |
+| 部署 | 僅本機開發，不公開部署 |
+| 建構 | 無需建構工具 |
+
+---
+
+## 專案結構
 
 ```
-Line 6 (top)    ━━━━━
-Line 5          ━━ ━━
-Line 4          ━━━━━
-Line 3          ━━━━━
-Line 2          ━━ ━━
-Line 1 (bottom) ━━━━━
+iching-divination/
+├── index.html              ← 主頁面
+├── css/
+│   └── style.css           ← 樣式表
+├── js/
+│   ├── app.js              ← 主應用邏輯
+│   ├── divination.js       ← 占卜演算法（三錢法）
+│   ├── hexagrams.js        ← 卦象查詢與對應
+│   └── trigrams.js         ← 八卦資料
+├── data/
+│   ├── hexagrams.json      ← 64 卦完整資料
+│   └── trigrams.json       ← 八卦資料
+├── docs/
+│   └── research.md         ← 研究筆記
+└── scripts/
+    └── generate_hexagrams.py ← 卦象資料生成腳本
 ```
 
 ---
 
-## Development Status
+## 占卜演算法
 
-🚧 **In Progress** — Bootstrap phase
+### 三錢法
 
-### Completed
-- [x] Repository created
-- [ ] Project structure
-- [ ] Hexagram data files
-- [ ] Core divination logic
-- [ ] Basic UI
-- [ ] Interpretation display
+每一爻（共 6 爻，由下往上）：
+1. 同時擲三枚銅幣
+2. 正面 = 3，反面 = 2
+3. 三枚加總決定爻的類型：
+
+| 總和 | 爻類型 | 符號 | 是否變爻？ |
+|------|--------|------|-----------|
+| 6 | 太陰（老陰） | ⚋ ✕ | 是 → 變為陽 |
+| 7 | 少陽 | ⚊ | 否 |
+| 8 | 少陰 | ⚋ | 否 |
+| 9 | 太陽（老陽） | ⚊ ✕ | 是 → 變為陰 |
+
+### 機率分布
+
+- P(6) = 1/8 = 12.5%
+- P(7) = 3/8 = 37.5%
+- P(8) = 3/8 = 37.5%
+- P(9) = 1/8 = 12.5%
 
 ---
 
-## License
+## 開發狀態
 
-MIT License — See [LICENSE](LICENSE) for details.
+✅ **已完成** — 所有 Jira 任務已結案
+
+- [x] Repository 建立
+- [x] 研究：易經基礎知識與卦象資料來源
+- [x] 產品：定義 MVP 功能與使用者旅程
+- [x] 架構：技術棧與專案結構
+- [x] 概念驗證：基本卦象生成與顯示
+- [x] 完整 64 卦資料
 
 ---
 
-## References
+## 授權
+
+MIT License — 詳見 [LICENSE](LICENSE)
+
+---
+
+## 參考資料
 
 - Wilhelm, Richard. *The I Ching or Book of Changes* (1950)
 - 《周易》原文
-- https://www.iching-online.com (reference, not affiliated)
+- https://www.iching-online.com（參考用，非關聯）
 
 ---
 
-*Built by Jarvis 🤖 — A rule-based system, no AI involved in readings.*
+*由 Jarvis 🤖 打造 — 純規則式系統，占卜過程不涉及任何 AI。*
