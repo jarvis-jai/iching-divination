@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易經占卜 | I Ching Divination</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>易經占卜</h1>
+            <p class="subtitle">I Ching Divination</p>
+        </header>
+
+        <main>
+            <section class="question-section">
+                <label for="question">你的問題 Your Question (optional)</label>
+                <textarea id="question" placeholder="心中默念你的問題..."></textarea>
+            </section>
+
+            <section class="divination-section">
+                <button id="castButton" class="cast-button">
+                    <span class="button-text">擲卦</span>
+                    <span class="button-subtext">Cast Hexagram</span>
+                </button>
+            </section>
+
+            <section id="result" class="result-section hidden">
+                <div class="hexagram-display">
+                    <div class="hexagram-card primary">
+                        <h2>本卦 Primary</h2>
+                        <div class="hexagram-visual" id="primaryHexagram"></div>
+                        <div class="hexagram-info">
+                            <span class="hexagram-number" id="primaryNumber"></span>
+                            <span class="hexagram-name" id="primaryName"></span>
+                        </div>
+                        <div class="hexagram-judgment" id="primaryJudgment"></div>
+                    </div>
+
+                    <div class="hexagram-card relating hidden" id="relatingCard">
+                        <h2>之卦 Relating</h2>
+                        <div class="hexagram-visual" id="relatingHexagram"></div>
+                        <div class="hexagram-info">
+                            <span class="hexagram-number" id="relatingNumber"></span>
+                            <span class="hexagram-name" id="relatingName"></span>
+                        </div>
+                        <div class="hexagram-judgment" id="relatingJudgment"></div>
+                    </div>
+                </div>
+
+                <div class="changing-lines-info" id="changingLinesInfo"></div>
+            </section>
+
+            <section id="coins" class="coins-section hidden">
+                <h3>擲幣結果 Coin Toss Results</h3>
+                <div class="coin-tosses" id="coinTosses"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Rule-based divination • No AI • Traditional I Ching</p>
+            <p class="copyright">Built by Jarvis 🤖</p>
+        </footer>
+    </div>
+
+    <script src="js/trigrams.js"></script>
+    <script src="js/hexagrams.js"></script>
+    <script src="js/divination.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

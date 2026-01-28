@@ -1,0 +1,236 @@
+{
+  "hexagrams": [
+    {
+      "number": 1,
+      "binary": "111111",
+      "name": {
+        "chinese": "乾",
+        "pinyin": "qián",
+        "english": "The Creative"
+      },
+      "trigrams": {
+        "upper": "111",
+        "lower": "111"
+      },
+      "judgment": {
+        "text": "The Creative works sublime success, furthering through perseverance.",
+        "chinese": "乾：元，亨，利，貞。"
+      },
+      "image": {
+        "text": "The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.",
+        "chinese": "天行健，君子以自強不息。"
+      },
+      "lines": [
+        { "position": 1, "text": "Hidden dragon. Do not act." },
+        { "position": 2, "text": "Dragon appearing in the field. It furthers one to see the great man." },
+        { "position": 3, "text": "All day long the superior man is creatively active. At nightfall his mind is beset with cares. Danger. No blame." },
+        { "position": 4, "text": "Wavering flight over the depths. No blame." },
+        { "position": 5, "text": "Flying dragon in the heavens. It furthers one to see the great man." },
+        { "position": 6, "text": "Arrogant dragon will have cause to repent." }
+      ]
+    },
+    {
+      "number": 2,
+      "binary": "000000",
+      "name": {
+        "chinese": "坤",
+        "pinyin": "kūn",
+        "english": "The Receptive"
+      },
+      "trigrams": {
+        "upper": "000",
+        "lower": "000"
+      },
+      "judgment": {
+        "text": "The Receptive brings about sublime success, furthering through the perseverance of a mare.",
+        "chinese": "坤：元，亨，利牝馬之貞。"
+      },
+      "image": {
+        "text": "The earth's condition is receptive devotion. Thus the superior man who has breadth of character carries the outer world.",
+        "chinese": "地勢坤，君子以厚德載物。"
+      },
+      "lines": [
+        { "position": 1, "text": "When there is hoarfrost underfoot, solid ice is not far off." },
+        { "position": 2, "text": "Straight, square, great. Without purpose, yet nothing remains unfurthered." },
+        { "position": 3, "text": "Hidden lines. One is able to remain persevering." },
+        { "position": 4, "text": "A tied-up sack. No blame, no praise." },
+        { "position": 5, "text": "A yellow lower garment brings supreme good fortune." },
+        { "position": 6, "text": "Dragons fight in the meadow. Their blood is black and yellow." }
+      ]
+    },
+    {
+      "number": 3,
+      "binary": "010001",
+      "name": {
+        "chinese": "屯",
+        "pinyin": "zhūn",
+        "english": "Difficulty at the Beginning"
+      },
+      "trigrams": {
+        "upper": "010",
+        "lower": "001"
+      },
+      "judgment": {
+        "text": "Difficulty at the Beginning works supreme success, furthering through perseverance. Nothing should be undertaken. It furthers one to appoint helpers.",
+        "chinese": "屯：元，亨，利，貞，勿用，有攸往，利建侯。"
+      },
+      "image": {
+        "text": "Clouds and thunder: The image of Difficulty at the Beginning. Thus the superior man brings order out of confusion.",
+        "chinese": "雲，雷，屯；君子以經綸。"
+      },
+      "lines": [
+        { "position": 1, "text": "Hesitation and hindrance. It furthers one to remain persevering. It furthers one to appoint helpers." },
+        { "position": 2, "text": "Difficulties pile up. The girl is chaste; she does not pledge herself." },
+        { "position": 3, "text": "Whoever hunts deer without the forester only loses his way in the forest." },
+        { "position": 4, "text": "Horse and wagon part. Strive for union." },
+        { "position": 5, "text": "Difficulties in blessing. A little perseverance brings good fortune. Great perseverance brings misfortune." },
+        { "position": 6, "text": "Horse and wagon part. Bloody tears flow." }
+      ]
+    },
+    {
+      "number": 4,
+      "binary": "100010",
+      "name": {
+        "chinese": "蒙",
+        "pinyin": "méng",
+        "english": "Youthful Folly"
+      },
+      "trigrams": {
+        "upper": "100",
+        "lower": "010"
+      },
+      "judgment": {
+        "text": "Youthful Folly has success. It is not I who seek the young fool; the young fool seeks me. At the first oracle I inform him. If he asks two or three times, it is importunity.",
+        "chinese": "蒙：亨。匪我求童蒙，童蒙求我。初筮告，再三瀆，瀆則不告。利貞。"
+      },
+      "image": {
+        "text": "A spring wells up at the foot of the mountain. Thus the superior man fosters his character by thoroughness in all that he does.",
+        "chinese": "山下出泉，蒙；君子以果行育德。"
+      },
+      "lines": [
+        { "position": 1, "text": "To make a fool develop, it furthers one to apply discipline." },
+        { "position": 2, "text": "To bear with fools in kindliness brings good fortune. To know how to take women brings good fortune." },
+        { "position": 3, "text": "Take not a maiden who loses herself at the sight of a man of bronze." },
+        { "position": 4, "text": "Entangled folly brings humiliation." },
+        { "position": 5, "text": "Childlike folly brings good fortune." },
+        { "position": 6, "text": "In punishing folly, it does not further one to commit transgressions." }
+      ]
+    },
+    {
+      "number": 5,
+      "binary": "010111",
+      "name": {
+        "chinese": "需",
+        "pinyin": "xū",
+        "english": "Waiting"
+      },
+      "trigrams": {
+        "upper": "010",
+        "lower": "111"
+      },
+      "judgment": {
+        "text": "Waiting. If you are sincere, you have light and success. Perseverance brings good fortune. It furthers one to cross the great water.",
+        "chinese": "需：有孚，光亨，貞吉。利涉大川。"
+      },
+      "image": {
+        "text": "Clouds rise up to heaven. The image of Waiting. Thus the superior man eats and drinks, is joyous and of good cheer.",
+        "chinese": "雲上於天，需；君子以飲食宴樂。"
+      },
+      "lines": [
+        { "position": 1, "text": "Waiting in the meadow. It furthers one to abide in what endures. No blame." },
+        { "position": 2, "text": "Waiting on the sand. There is some gossip. The end brings good fortune." },
+        { "position": 3, "text": "Waiting in the mud brings about the arrival of the enemy." },
+        { "position": 4, "text": "Waiting in blood. Get out of the pit." },
+        { "position": 5, "text": "Waiting at meat and drink. Perseverance brings good fortune." },
+        { "position": 6, "text": "One falls into the pit. Three uninvited guests arrive. Honor them, and in the end there will be good fortune." }
+      ]
+    },
+    {
+      "number": 6,
+      "binary": "111010",
+      "name": {
+        "chinese": "訟",
+        "pinyin": "sòng",
+        "english": "Conflict"
+      },
+      "trigrams": {
+        "upper": "111",
+        "lower": "010"
+      },
+      "judgment": {
+        "text": "Conflict. You are sincere and are being obstructed. A cautious halt halfway brings good fortune. Going through to the end brings misfortune.",
+        "chinese": "訟：有孚，窒。惕中吉。終凶。利見大人，不利涉大川。"
+      },
+      "image": {
+        "text": "Heaven and water go their opposite ways. Thus in all his transactions the superior man carefully considers the beginning.",
+        "chinese": "天與水違行，訟；君子以作事謀始。"
+      },
+      "lines": [
+        { "position": 1, "text": "If one does not perpetuate the affair, there is a little gossip. In the end, good fortune comes." },
+        { "position": 2, "text": "One cannot engage in conflict. One returns home. The people of his town, three hundred households, remain free of guilt." },
+        { "position": 3, "text": "To nourish oneself on ancient virtue induces perseverance. Danger. In the end, good fortune comes." },
+        { "position": 4, "text": "One cannot engage in conflict. One turns back and submits to fate. Peace. Perseverance brings good fortune." },
+        { "position": 5, "text": "To contend before him brings supreme good fortune." },
+        { "position": 6, "text": "Even if by chance a leather belt is bestowed on one, by the end of a morning it will have been snatched away three times." }
+      ]
+    },
+    {
+      "number": 7,
+      "binary": "000010",
+      "name": {
+        "chinese": "師",
+        "pinyin": "shī",
+        "english": "The Army"
+      },
+      "trigrams": {
+        "upper": "000",
+        "lower": "010"
+      },
+      "judgment": {
+        "text": "The Army. The army needs perseverance and a strong man. Good fortune without blame.",
+        "chinese": "師：貞，丈人吉，無咎。"
+      },
+      "image": {
+        "text": "In the middle of the earth is water. Thus the superior man increases his masses by generosity toward the people.",
+        "chinese": "地中有水，師；君子以容民畜眾。"
+      },
+      "lines": [
+        { "position": 1, "text": "An army must set forth in proper order. If the order is not good, misfortune threatens." },
+        { "position": 2, "text": "In the midst of the army. Good fortune. No blame. The king bestows a triple decoration." },
+        { "position": 3, "text": "Perchance the army carries corpses in the wagon. Misfortune." },
+        { "position": 4, "text": "The army retreats. No blame." },
+        { "position": 5, "text": "There is game in the field. It furthers one to catch it. Without blame." },
+        { "position": 6, "text": "The great prince issues commands, founds states, vests families with fiefs. Inferior people should not be employed." }
+      ]
+    },
+    {
+      "number": 8,
+      "binary": "010000",
+      "name": {
+        "chinese": "比",
+        "pinyin": "bǐ",
+        "english": "Holding Together"
+      },
+      "trigrams": {
+        "upper": "010",
+        "lower": "000"
+      },
+      "judgment": {
+        "text": "Holding Together brings good fortune. Inquire of the oracle once again whether you possess sublimity, constancy, and perseverance; then there is no blame.",
+        "chinese": "比：吉。原筮元永貞，無咎。"
+      },
+      "image": {
+        "text": "On the earth is water. Thus the kings of antiquity bestowed the different states as fiefs and cultivated friendly relations with the feudal lords.",
+        "chinese": "地上有水，比；先王以建萬國，親諸侯。"
+      },
+      "lines": [
+        { "position": 1, "text": "Hold to him in truth and loyalty; this is without blame. Truth, like a full earthen bowl." },
+        { "position": 2, "text": "Hold to him inwardly. Perseverance brings good fortune." },
+        { "position": 3, "text": "You hold together with the wrong people." },
+        { "position": 4, "text": "Hold to him outwardly also. Perseverance brings good fortune." },
+        { "position": 5, "text": "Manifestation of holding together. In the hunt the king uses beaters on three sides only. The citizens need no warning. Good fortune." },
+        { "position": 6, "text": "He finds no head for holding together. Misfortune." }
+      ]
+    }
+  ]
+}

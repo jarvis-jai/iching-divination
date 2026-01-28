@@ -1,0 +1,76 @@
+{
+  "trigrams": [
+    {
+      "number": 1,
+      "binary": "111",
+      "name": { "chinese": "乾", "pinyin": "qián", "english": "Heaven" },
+      "symbol": "☰",
+      "element": "Heaven",
+      "quality": "Creative",
+      "family": "Father"
+    },
+    {
+      "number": 2,
+      "binary": "110",
+      "name": { "chinese": "兌", "pinyin": "duì", "english": "Lake" },
+      "symbol": "☱",
+      "element": "Lake",
+      "quality": "Joyous",
+      "family": "Youngest Daughter"
+    },
+    {
+      "number": 3,
+      "binary": "101",
+      "name": { "chinese": "離", "pinyin": "lí", "english": "Fire" },
+      "symbol": "☲",
+      "element": "Fire",
+      "quality": "Clinging",
+      "family": "Middle Daughter"
+    },
+    {
+      "number": 4,
+      "binary": "100",
+      "name": { "chinese": "震", "pinyin": "zhèn", "english": "Thunder" },
+      "symbol": "☳",
+      "element": "Thunder",
+      "quality": "Arousing",
+      "family": "Eldest Son"
+    },
+    {
+      "number": 5,
+      "binary": "011",
+      "name": { "chinese": "巽", "pinyin": "xùn", "english": "Wind" },
+      "symbol": "☴",
+      "element": "Wind/Wood",
+      "quality": "Gentle",
+      "family": "Eldest Daughter"
+    },
+    {
+      "number": 6,
+      "binary": "010",
+      "name": { "chinese": "坎", "pinyin": "kǎn", "english": "Water" },
+      "symbol": "☵",
+      "element": "Water",
+      "quality": "Abysmal",
+      "family": "Middle Son"
+    },
+    {
+      "number": 7,
+      "binary": "001",
+      "name": { "chinese": "艮", "pinyin": "gèn", "english": "Mountain" },
+      "symbol": "☶",
+      "element": "Mountain",
+      "quality": "Stillness",
+      "family": "Youngest Son"
+    },
+    {
+      "number": 8,
+      "binary": "000",
+      "name": { "chinese": "坤", "pinyin": "kūn", "english": "Earth" },
+      "symbol": "☷",
+      "element": "Earth",
+      "quality": "Receptive",
+      "family": "Mother"
+    }
+  ]
+}
